@@ -1,0 +1,16 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "content_scripts": [ {
+      "css": [ "css/page.css" ],
+      "js": [ "scripts/lib/jquery.min.js", "scripts/page.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "分享图片到boqpod博客",
+   "manifest_version": 2,
+   "name": "Share Images To boqpod Blog",
+   "permissions": [ "notifications", "contextMenus", "tabs", "http://*/*", "https://*/*" ],
+   "version": "2014.8.16.1",
+   "web_accessible_resources": [ "images/*" ]
+}
